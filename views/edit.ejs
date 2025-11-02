@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Edit your information</h1>
+    <form method="post" action="/admin/<%=edit1._id%>"?_method=PUT  class="f1">
+        <label for="">enter the owner name of the website</label>
+        <input type="text" value="<%=edit1.ownername%>" name="websitedata[ownername]" placeholder="ownername" /><br />
+        <label for="">Enter the email id for customer support</label>
+        <input type="text" value="<%=edit1.emailid%>" name="websitedata[emailid]" placeholder="owner emailid" /><br />
+        <label for="">ener the contact information for customer support</label>
+        <input type="number" value="<%=edit1.contact%>" name="websitedata[contact]" placeholder="contact" /><br />
+        <label for="">enter the componey name for heading</label>
+        <input type="text" value="<%=edit1.companeyname%>" name="websitedata[companeyname]" placeholder="componeyname" /><br />
+        <label for="">enter the website type you want to build</label>
+        <input type="text" value="<%=edit1.websitetype%>" name="websitedata[websitetype]" placeholder="websitetype" /><br />
+        <label for="">enter the discription which you want to add</label>
+        <input type="text" value="<%=edit1.description%>" name="websitedata[description]" placeholder="brif discription" /><br />
+        <label for="">enter the featers you want in your website</label>
+        <input type="text" value="<%=edit1.featers%>" name="websitedata[featers]" placeholder="featers" /><br />
+        <label for="">Do you want login page</label>
+        <input type="text" value="<%=edit1.looginpage%>" name="websitedata[looginpage]" placeholder="login page" /><br />
+        <label for="">Do you want logout page</label>
+        <input type="text" value="<%=edit1.logoutpage%>" name="websitedata[logoutpage]" placeholder="logoutpage" /><br />
+        <label for="">what is is your budget</label>
+        <input type="text" value="<%=edit1.budget%>" name="websitedata[budget]" placeholder="budget" /><br />
+        <label for="">enter the your country name</label>
+        <input type="text" value="<%=edit1.country%>" name="websitedata[country]" placeholder="country name" /><br />
+        <button>Submit</button>
+        <br><br>
+    </form>
+</body>
+
+</html>

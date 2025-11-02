@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            text-align: center;
+        }
+
+        .head1 {
+            width: 100%;
+            color: rgb(0, 55, 255);
+            background-color: rgb(239, 239, 239);
+            box-shadow: 5px 5px 5px rgb(198, 198, 198);
+            height: 1.5cm;
+        }
+
+        .users {
+            margin-top: 20px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .users li {
+            margin-left: 50px;
+            margin-top: 20px;
+            width: 400px;
+            height: 200px;
+            padding-top: 10px;
+            border: 1px solid gray;
+            background-color: rgb(231, 231, 231);
+            border-radius: 8px;
+            list-style: none;
+            border: none;
+        }
+
+        .users li a {
+            text-decoration: none;
+            color: rgb(10, 10, 10);
+            font-size: 25px;
+        }
+        .users li p{
+            font-size: 21px;
+            color: rgb(150, 150, 150);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="head1">Admin of fin-tech bussiness website</h1>
+    <ul class="users">
+        <% for(let data of data1){ %>
+            <li>
+                <p><%=data.ownername%></p>
+                <a href="/admin/<%=data._id%>">
+                    <%=data.companeyname%><br>
+                </a>
+                <p>
+                    <%=data.websitetype%>
+                </p>
+                <p>
+                    <%=data.emailid%>
+                </p>
+                <p><%=data.contact%></p>
+            </li>
+
+            <%}%>
+    </ul>
+</body>
+
+</html>

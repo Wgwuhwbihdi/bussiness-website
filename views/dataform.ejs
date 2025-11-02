@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            text-align: center;
+        }
+
+        .nav1 {
+            width: 100%;
+            height: 1.5cm;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 7px 7px 7px rgb(213, 213, 213);
+        }
+
+        .nav1 h1 {
+            color: rgb(0, 60, 255);
+        }
+
+        .sec1 {
+            text-align: center;
+        }
+
+        .sec1 section {
+            margin-top: 10px;
+            width: 1400px;
+            display: inline-table;
+            height: 500px;
+            border: 2px solid rgb(192, 192, 192);
+            border-radius: 7px;
+            border: none;
+        }
+
+        .higlighter {
+            color: rgb(6, 60, 255);
+            text-decoration: underline;
+        }
+
+        .f1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .f1 input {
+            border: none;
+            width: 800px;
+            height: 40px;
+            background-color: rgb(231, 231, 231);
+            border-radius: 7px;
+        }
+
+        .f1 label {
+            width: 800px;
+            border: none;
+            text-align: left;
+            margin-bottom: 4px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .f1 button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            height: 40px;
+            border: none;
+            border-radius: 7px;
+            background-color: rgb(0, 17, 255);
+            padding-top: 13px;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav1">
+        <h1>website data form filling</h1>
+    </nav>
+    <form action="/data" method="post" class="f1">
+        <label for="">enter the owner name of the website</label>
+        <input type="text" name="websitedata[ownername]" placeholder="ownername" /><br />
+        <label for="">Enter the email id for customer support</label>
+        <input type="text" name="websitedata[emailid]" placeholder="owner emailid" /><br />
+        <label for="">ener the contact information for customer support</label>
+        <input type="number" name="websitedata[contact]" placeholder="contact" /><br />
+        <label for="">enter the componey name for heading</label>
+        <input type="text" name="websitedata[companeyname]" placeholder="componeyname" /><br />
+        <label for="">enter the website type you want to build</label>
+        <input type="text" name="websitedata[websitetype]" placeholder="websitetype" /><br />
+        <label for="">enter the discription which you want to add</label>
+        <input type="text" name="websitedata[description]" placeholder="brif discription" /><br />
+        <label for="">enter the featers you want in your website</label>
+        <input type="text" name="websitedata[featers]" placeholder="featers" /><br />
+        <label for="">Do you want login page</label>
+        <input type="text" name="websitedata[looginpage]" placeholder="login page" /><br />
+        <label for="">Do you want logout page</label>
+        <input type="text" name="websitedata[logoutpage]" placeholder="logoutpage" /><br />
+        <label for="">what is is your budget</label>
+        <input type="text" name="websitedata[budget]" placeholder="budget" /><br />
+        <label for="">enter the your country name</label>
+        <input type="text" name="websitedata[country]" placeholder="country name" /><br />
+        <button>Submit</button>
+        <br><br>
+    </form>
+    <footer>
+        <a href="">for conatact support</a>
+    </footer>
+</body>
+
+</html>
