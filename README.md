@@ -39,9 +39,9 @@ It provides visitors with an overview of the company’s offerings, testimonials
 
 Category	Technology Used
 
-Frontend	HTML5, CSS3, JavaScript, Bootstrap / Tailwind CSS
-Backend	Node.js / PHP / Python Flask (choose one)
-Database	MongoDB / MySQL (optional if static)
+Frontend	HTML5, CSS3, JavaScript / CSS
+Backend	Node.js / javascript (choose one)
+Database	MongoDB /  (optional if static)
 Deployment	Vercel / Netlify / AWS / cPanel
 Version Control	Git & GitHub
 
